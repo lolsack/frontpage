@@ -1,0 +1,21 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[branch "master"]
+[remote "dokku"]
+	url = dokku@dokku.alemayhu.com:lolsack.com
+	fetch = +refs/heads/*:refs/remotes/dokku/*
+[remote "origin"]
+	url = git@github.com:lolsack/frontpage.git
+	fetch = +refs/heads/*:refs/remotes/origin/*
+[branch "master"]
+	remote = origin
+	merge = refs/heads/master
+[remote "production"]
+	url = dokku@frontpage.lolsack.com:frontpage
+	fetch = +refs/heads/*:refs/remotes/production/*
+[remote "staging"]
+	url = dokku@staging.lolsack.com:frontpage-staging
+	fetch = +refs/heads/*:refs/remotes/staging/*
