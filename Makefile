@@ -16,3 +16,6 @@ staging:
 production:
 	# TODO: ask for confirmation
 	git push production master
+
+sync: staging
+	git push origin master
