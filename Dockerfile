@@ -11,6 +11,7 @@ ADD conf/lolsack.com /etc/nginx/conf.d/$APP_NAME.conf
 RUN mkdir -pv $APP_ROOT/log
 ADD index.html $APP_ROOT/
 ADD Roflcopter.gif $APP_ROOT/
+ADD style $APP_ROOT/
 
 # Tell the world about our port
 EXPOSE 80
