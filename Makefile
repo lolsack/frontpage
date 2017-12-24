@@ -9,3 +9,10 @@ docker_run: docker
 	docker run -dit -p 8282:80 ${project}
 docker_push:
 	docker push ${project}
+
+staging:
+	git push staging master
+
+production:
+	# TODO: ask for confirmation
+	git push production master
